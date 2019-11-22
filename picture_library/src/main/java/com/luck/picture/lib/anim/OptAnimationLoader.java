@@ -47,6 +47,7 @@ public class OptAnimationLoader {
         return createAnimationFromXml(c, parser, null, Xml.asAttributeSet(parser));
     }
 
+    /**使用Pull解析资源id，得到资源动画！*/
     private static Animation createAnimationFromXml(Context c, XmlPullParser parser,
                                                     AnimationSet parent, AttributeSet attrs) throws XmlPullParserException, IOException {
 
@@ -56,25 +57,25 @@ public class OptAnimationLoader {
         int type;
         int depth = parser.getDepth();
 
-        while (((type=parser.next()) != XmlPullParser.END_TAG || parser.getDepth() > depth)
+        while (((type = parser.next()) != XmlPullParser.END_TAG || parser.getDepth() > depth)
                 && type != XmlPullParser.END_DOCUMENT) {
 
             if (type != XmlPullParser.START_TAG) {
                 continue;
             }
 
-            String  name = parser.getName();
+            String name = parser.getName();
 
             if (name.equals("set")) {
                 anim = new AnimationSet(c, attrs);
-                createAnimationFromXml(c, parser, (AnimationSet)anim, attrs);
+                createAnimationFromXml(c, parser, (AnimationSet) anim, attrs);
             } else if (name.equals("alpha")) {
                 anim = new AlphaAnimation(c, attrs);
             } else if (name.equals("scale")) {
                 anim = new ScaleAnimation(c, attrs);
-            }  else if (name.equals("rotate")) {
+            } else if (name.equals("rotate")) {
                 anim = new RotateAnimation(c, attrs);
-            }  else if (name.equals("translate")) {
+            } else if (name.equals("translate")) {
                 anim = new TranslateAnimation(c, attrs);
             } else {
                 try {

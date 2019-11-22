@@ -1,0 +1,10 @@
+
+Esquid:S1604—"(Make this anonymous inner class a lambda(‚úã™ÿÿÿÿÿ
+nsquid:S00117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Æ‹üÿÿÿÿ
+?squid:S1148k"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148»"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Fsquid:S1659-"*Declare "animationOut" on a separate line.(çÔ—«ùÿÿÿÿ
+Asquid:S16591"*Declare "drawableDown" on a separate line.(¶Ã‹
+usquid:S1450/"YRemove the "id_ll_root" field and declare it as a local variable in the relevant methods.(®üÌÙşÿÿÿÿ
+rsquid:S00116/"URename this field "id_ll_root" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®üÌÙşÿÿÿÿ
+psquid:S001160"XRename this field "picture_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ŠÂ

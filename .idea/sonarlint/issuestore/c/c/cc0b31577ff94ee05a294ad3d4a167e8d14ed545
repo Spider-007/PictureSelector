@@ -1,0 +1,55 @@
+
+hsquid:S1301ó"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ
+csquid:S1301õ"KReplace this "switch" statement by "if" statements to increase readability.(•’˜Ç
+Bsquid:S5411ƒ"*Use the primitive boolean expression here.(Ë¿à
+:squid:S1659+"#Declare "minus" on a separate line.(èÒ ª
+9squid:S1659+""Declare "plus" on a separate line.(èÒ ª
+Csquid:S1659,"'Declare "rgb_style" on a separate line.(¢à„ûÿÿÿÿ
+Hsquid:S1659,",Declare "rgb_photo_mode" on a separate line.(¢à„ûÿÿÿÿ
+Csquid:S1659-",Declare "aspect_ratio_y" on a separate line.(ş†ùÿ
+Bsquid:S1659.",Declare "cb_choose_mode" on a separate line.(Ç÷”i
+?squid:S1659.")Declare "cb_isCamera" on a separate line.(Ç÷”i
+<squid:S1659."&Declare "cb_isGif" on a separate line.(Ç÷”i
+Hsquid:S1659/",Declare "cb_preview_img" on a separate line.(ÿôõ¿şÿÿÿÿ
+Jsquid:S1659/".Declare "cb_preview_video" on a separate line.(ÿôõ¿şÿÿÿÿ
+Asquid:S1659/"%Declare "cb_crop" on a separate line.(ÿôõ¿şÿÿÿÿ
+Esquid:S1659/")Declare "cb_compress" on a separate line.(ÿôõ¿şÿÿÿÿ
+Asquid:S16590"%Declare "cb_mode" on a separate line.(ÅğÌØşÿÿÿÿ
+Asquid:S16590"%Declare "cb_hide" on a separate line.(ÅğÌØşÿÿÿÿ
+Jsquid:S16590".Declare "cb_crop_circular" on a separate line.(ÅğÌØşÿÿÿÿ
+Fsquid:S16590"*Declare "cb_styleCrop" on a separate line.(ÅğÌØşÿÿÿÿ
+Isquid:S16590"-Declare "cb_showCropGrid" on a separate line.(ÅğÌØşÿÿÿÿ
+Esquid:S16591".Declare "cb_showCropFrame" on a separate line.(Ê‹Ê÷
+Esquid:S16591".Declare "cb_preview_audio" on a separate line.(Ê‹Ê÷
+6squid:S1659ñ"Declare "y" on a separate line.(ú¼ÖS
+wsquid:S1450'"[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(¿á© ıÿÿÿÿ
+osquid:S1450+"XRemove the "left_back" field and declare it as a local variable in the relevant methods.(èÒ ª
+ksquid:S1450+"TRemove the "minus" field and declare it as a local variable in the relevant methods.(èÒ ª
+jsquid:S1450+"SRemove the "plus" field and declare it as a local variable in the relevant methods.(èÒ ª
+tsquid:S1450,"XRemove the "rgb_style" field and declare it as a local variable in the relevant methods.(¢à„ûÿÿÿÿ
+ysquid:S1450,"]Remove the "rgb_photo_mode" field and declare it as a local variable in the relevant methods.(¢à„ûÿÿÿÿ
+psquid:S00116*"XRename this field "tv_select_num" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß•¾‹
+lsquid:S00116+"TRename this field "left_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÒ ª
+psquid:S00116,"SRename this field "rgb_crop" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢à„ûÿÿÿÿ
+qsquid:S00116,"TRename this field "rgb_style" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢à„ûÿÿÿÿ
+vsquid:S00116,"YRename this field "rgb_photo_mode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢à„ûÿÿÿÿ
+qsquid:S00116-"YRename this field "aspect_ratio_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş†ùÿ
+qsquid:S00116-"YRename this field "aspect_ratio_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş†ùÿ
+jsquid:S00116."SRename this field "cb_voice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç÷”i
+psquid:S00116."YRename this field "cb_choose_mode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç÷”i
+msquid:S00116."VRename this field "cb_isCamera" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç÷”i
+jsquid:S00116."SRename this field "cb_isGif" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç÷”i
+vsquid:S00116/"YRename this field "cb_preview_img" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿôõ¿şÿÿÿÿ
+xsquid:S00116/"[Rename this field "cb_preview_video" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿôõ¿şÿÿÿÿ
+osquid:S00116/"RRename this field "cb_crop" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿôõ¿şÿÿÿÿ
+ssquid:S00116/"VRename this field "cb_compress" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿôõ¿şÿÿÿÿ
+osquid:S001160"RRename this field "cb_mode" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅğÌØşÿÿÿÿ
+osquid:S001160"RRename this field "cb_hide" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅğÌØşÿÿÿÿ
+xsquid:S001160"[Rename this field "cb_crop_circular" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅğÌØşÿÿÿÿ
+tsquid:S001160"WRename this field "cb_styleCrop" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅğÌØşÿÿÿÿ
+wsquid:S001160"ZRename this field "cb_showCropGrid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅğÌØşÿÿÿÿ
+ssquid:S001161"[Rename this field "cb_showCropFrame" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê‹Ê÷
+ssquid:S001161"[Rename this field "cb_preview_audio" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê‹Ê÷
+jsquid:ModifiersOrderCheck%"EReorder the modifiers to comply with the Java Language Specification.(Š·À
+Asquid:S1125²")Remove the literal "false" boolean value.(Êº×
+Asquid:S1125Ø")Remove the literal "false" boolean value.(Êº×

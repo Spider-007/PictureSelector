@@ -53,17 +53,29 @@ public class FolderPopWindow extends PopupWindow implements View.OnClickListener
         this.context = context;
         this.mimeType = mimeType;
         window = LayoutInflater.from(context).inflate(R.layout.picture_window_folder, null);
+        /**加载布局*/
         this.setContentView(window);
+        /**得到当前的屏幕宽度*/
         this.setWidth(ScreenUtils.getScreenWidth(context));
+        /**得到当前的屏幕高度*/
         this.setHeight(ScreenUtils.getScreenHeight(context));
+        /**设置动画风格为windowStyle*/
         this.setAnimationStyle(R.style.WindowStyle);
+        /**设置是否聚焦显示*/
         this.setFocusable(true);
+        /**设置触摸事件的响应*/
         this.setOutsideTouchable(true);
+        /**更新当前View显示*/
         this.update();
+        /**设置背景图片，必填项*/
         this.setBackgroundDrawable(new ColorDrawable(Color.argb(123, 0, 0, 0)));
+        /**显示打开图标*/
         drawableUp = AttrsUtils.getTypeValuePopWindowImg(context, R.attr.picture_arrow_up_icon);
+        /**显示关闭图标*/
         drawableDown = AttrsUtils.getTypeValuePopWindowImg(context, R.attr.picture_arrow_down_icon);
+        /**显示输入动画*/
         animationIn = AnimationUtils.loadAnimation(context, R.anim.photo_album_show);
+        /**显示输出动画*/
         animationOut = AnimationUtils.loadAnimation(context, R.anim.photo_album_dismiss);
         initView();
     }
@@ -74,7 +86,8 @@ public class FolderPopWindow extends PopupWindow implements View.OnClickListener
         recyclerView = (RecyclerView) window.findViewById(R.id.folder_list);
         recyclerView.getLayoutParams().height = (int) (ScreenUtils.getScreenHeight(context) * 0.6);
         recyclerView.addItemDecoration(new RecycleViewDivider(
-                context, LinearLayoutManager.HORIZONTAL, ScreenUtils.dip2px(context, 0), ContextCompat.getColor(context, R.color.transparent)));
+                context, LinearLayoutManager.HORIZONTAL, ScreenUtils.dip2px(context, 0),
+                ContextCompat.getColor(context, R.color.transparent)));
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
         recyclerView.setAdapter(adapter);
         id_ll_root.setOnClickListener(this);
