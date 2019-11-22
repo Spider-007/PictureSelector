@@ -6,20 +6,20 @@ import android.os.Parcelable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * author：luck
- * project：PictureSelector
- * package：com.luck.picture.entity
- * email：893855882@qq.com
- * data：16/12/31
- */
 public class LocalMediaFolder implements Parcelable {
+    /**文件目录名字*/
     private String name;
+    /**文件夹路径*/
     private String path;
+    /**文件首选图片路径*/
     private String firstImagePath;
+    /**imageNum的图片数量*/
     private int imageNum;
+    /**选中数量*/
     private int checkedNum;
+    /**是否选中*/
     private boolean isChecked;
+    /**得到本地所有图片*/
     private List<LocalMedia> images = new ArrayList<LocalMedia>();
 
 
@@ -122,4 +122,8 @@ public class LocalMediaFolder implements Parcelable {
             return new LocalMediaFolder[size];
         }
     };
+
+
+
+
 }

@@ -3,3 +3,21 @@ l
 <app/src/main/java/com/luck/pictureselector/MainActivity.java,c\c\cc0b31577ff94ee05a294ad3d4a167e8d14ed545
 ~
 Npicture_library/src/main/java/com/luck/picture/lib/widget/FolderPopWindow.java,a\e\aed4dbea88ed4b05d2de4bbcdbfaddce4a6d3559
+
+Opicture_library/src/main/java/com/luck/picture/lib/anim/OptAnimationLoader.java,f\1\f16d781937c5813d01eb47d141519db539f4a129
+Œ
+\picture_library/src/main/java/com/luck/picture/lib/adapter/PictureAlbumDirectoryAdapter.java,e\d\ed117cded6c6d31f98669fd77c09e12d92067714
+y
+Ipicture_library/src/main/java/com/luck/picture/lib/entity/LocalMedia.java,7\3\736226f405cc43410ae10c2c988208a32d82f145
+
+Opicture_library/src/main/java/com/luck/picture/lib/entity/LocalMediaFolder.java,c\c\cc484ead6485b68c6239ea7e5d8334457469c7ee
+
+Qpicture_library/src/main/java/com/luck/picture/lib/permissions/RxPermissions.java,a\9\a9ee5952e49e58b805f3140bd59d562cb9b404ac
+~
+Npicture_library/src/main/java/com/luck/picture/lib/permissions/Permission.java,e\3\e3d24d7b7f07c4c5033188d360848f8a6bb61881
+
+Opicture_library/src/main/java/com/luck/picture/lib/PictureSelectorActivity.java,9\0\90e289be9970186809888ec214cb359c9c76927a
+q
+Apicture_library/src/main/res/layout/picture_album_folder_item.xml,e\c\ecdeea4301933b2afb7e5a7c707335f5a0e29be2
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

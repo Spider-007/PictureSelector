@@ -1,0 +1,59 @@
+
+vsquid:S1450N"`Remove the "picture_left_back" field and declare it as a local variable in the relevant methods.(»‹Ä
+psquid:S00116O"XRename this field "picture_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ôÜ
+vsquid:S00116Q"YRename this field "tv_musicStatus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Š‘ºÿÿÿÿÿ
+Esquid:S1125¸"(Remove the literal "true" boolean value.(·İîõúÿÿÿÿ
+@squid:S1148˜"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Asquid:S1125İ")Remove the literal "false" boolean value.(ıŠæ°
+@squid:S1148ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Lsquid:S1066é"/Merge this if statement with the enclosing one.(î…ªƒûÿÿÿÿ
+Bsquid:S5411®"*Use the primitive boolean expression here.(Ë¿à
+@squid:S1148æ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148õ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Lsquid:S1659P"0Declare "picture_tv_img_num" on a separate line.(ö¡„ıÿÿÿÿ
+gsquid:S1301}"KReplace this "switch" statement by "if" statements to increase readability.(õËãàøÿÿÿÿ
+fsquid:S00101ü"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ñª—ş
+bsquid:HiddenFieldCheckŒ":Rename "images" which hides the field declared at line 86.(¾ƒ«çúÿÿÿÿ
+Gsquid:S1659Q"+Declare "tv_musicTotal" on a separate line.(—Š‘ºÿÿÿÿÿ
+psquid:S00116S"SRename this field "id_ll_ok" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÁÖ¹ûÿÿÿÿ
+Hsquid:S1659Q",Declare "tv_musicStatus" on a separate line.(—Š‘ºÿÿÿÿÿ
+@squid:S1148Ö"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Fsquid:S1125°")Remove the literal "false" boolean value.(”ùº€ÿÿÿÿÿ
+zsquid:S00116P"]Rename this field "picture_id_preview" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¡„ıÿÿÿÿ
+esquid:UselessImportCheck"<Remove this unused import 'android.content.DialogInterface'.(Š­›¨şÿÿÿÿ
+ssquid:S00116N"\Rename this field "picture_left_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‹Ä
+Lsquid:S1659P"0Declare "picture_id_preview" on a separate line.(ö¡„ıÿÿÿÿ
+zsquid:S00116P"]Rename this field "picture_tv_img_num" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¡„ıÿÿÿÿ
+osquid:S00116P"RRename this field "tv_Stop" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¡„ıÿÿÿÿ
+=squid:S1659O"&Declare "tv_empty" on a separate line.(»ôÜ
+rsquid:S1450P"VRemove the "tv_Stop" field and declare it as a local variable in the relevant methods.(ö¡„ıÿÿÿÿ
+Bsquid:S1659O"+Declare "picture_right" on a separate line.(»ôÜ
+psquid:S00116O"XRename this field "picture_right" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ôÜ
+@squid:S1125"(Remove the literal "true" boolean value.(Ğæ¤…
+Bsquid:S5411¨"*Use the primitive boolean expression here.(Ë¿à
+jsquid:ModifiersOrderCheckK"EReorder the modifiers to comply with the Java Language Specification.(­’ù¬
+Asquid:S1659P"%Declare "tv_Stop" on a separate line.(ö¡„ıÿÿÿÿ
+usquid:S00116Q"XRename this field "tv_musicTotal" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Š‘ºÿÿÿÿÿ
+xsquid:S00116R"[Rename this field "rl_picture_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶®¡íûÿÿÿÿ
+ssquid:S1450O"\Remove the "picture_right" field and declare it as a local variable in the relevant methods.(»ôÜ
+psquid:S00116O"XRename this field "picture_tv_ok" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ôÜ
+osquid:S00116P"RRename this field "tv_Quit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¡„ıÿÿÿÿ
+>squid:S1068K"'Remove this unused "TAG" private field.(­’ù¬
+{squid:S1450T"_Remove the "picture_recycler" field and declare it as a local variable in the relevant methods.(´ÏÙ›ÿÿÿÿÿ
+Fsquid:S1659P"*Declare "tv_PlayPause" on a separate line.(ö¡„ıÿÿÿÿ
+ksquid:S00116O"SRename this field "tv_empty" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ôÜ
+]squid:HiddenFieldCheckü":Rename "images" which hides the field declared at line 86.(ÃŒÿŸ
+@squid:S1148Ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+xsquid:S00116T"[Rename this field "picture_recycler" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÏÙ›ÿÿÿÿÿ
+Bsquid:S1659O"+Declare "picture_tv_ok" on a separate line.(»ôÜ
+Asquid:S1659P"%Declare "tv_Quit" on a separate line.(ö¡„ıÿÿÿÿ
+tsquid:S00116Q"WRename this field "tv_musicTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Š‘ºÿÿÿÿÿ
+asquid:S3358«"DExtract this nested ternary operation into an independent statement.(ÿÚ ëúÿÿÿÿ
+Fsquid:S1659Q"*Declare "tv_musicTime" on a separate line.(—Š‘ºÿÿÿÿÿ
+rsquid:S1450P"VRemove the "tv_Quit" field and declare it as a local variable in the relevant methods.(ö¡„ıÿÿÿÿ
+Bsquid:S5411û"*Use the primitive boolean expression here.(Ë¿à
+Bsquid:S5411ï"*Use the primitive boolean expression here.(Ë¿à
+@squid:S1148Î"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+tsquid:S00116P"WRename this field "tv_PlayPause" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¡„ıÿÿÿÿ
+Lsquid:S1066ƒ"/Merge this if statement with the enclosing one.(ı–Äşÿÿÿÿ
+@squid:S1604×"(Make this anonymous inner class a lambda(‡ÄÄ×

@@ -4,28 +4,31 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 
-/**
- * author：luck
- * project：PictureSelector
- * package：com.luck.picture.lib.entity
- * describe：for PictureSelector media entity.
- * email：893855882@qq.com
- * data：2017/5/24
- */
-
 public class LocalMedia implements Parcelable {
+    /**得到当前选中路径*/
     private String path;
+    /**得到当前路径*/
     private String compressPath;
+    /**得到裁剪路径*/
     private String cutPath;
+    /**持续时间*/
     private long duration;
+    /**是否选中*/
     private boolean isChecked;
+    /**是否裁剪*/
     private boolean isCut;
+    /**当前postion位置*/
     public int position;
     private int num;
+    /**当前类型*/
     private int mimeType;
+    /**当前图片类型*/
     private String pictureType;
+    /**是否压缩*/
     private boolean compressed;
+    /**宽度*/
     private int width;
+    /**高度*/
     private int height;
 
     public LocalMedia() {

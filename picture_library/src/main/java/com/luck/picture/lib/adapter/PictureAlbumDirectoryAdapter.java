@@ -64,13 +64,21 @@ public class PictureAlbumDirectoryAdapter extends RecyclerView.Adapter<PictureAl
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
+        /**获取当前目录下面显示的文件夹的信息*/
         final LocalMediaFolder folder = folders.get(position);
+        /**得到当前对应文件夹下面的名称*/
         String name = folder.getName();
+        /**得到总的当前目录下面的数量*/
         int imageNum = folder.getImageNum();
+        /**得到第一张图片（最新）的路径*/
         String imagePath = folder.getFirstImagePath();
+        /**查看是否选中*/
         boolean isChecked = folder.isChecked();
+        /**得到选中数量*/
         int checkedNum = folder.getCheckedNum();
+        /**设置图片目录下面的图片如果有显示的就会显示*/
         holder.tv_sign.setVisibility(checkedNum > 0 ? View.VISIBLE : View.INVISIBLE);
+        /**设置itemView都为选中状态*/
         holder.itemView.setSelected(isChecked);
         if (mimeType == PictureMimeType.ofAudio()) {
             holder.first_image.setImageResource(R.drawable.audio_placeholder);
