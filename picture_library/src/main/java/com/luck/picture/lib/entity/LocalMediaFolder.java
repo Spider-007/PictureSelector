@@ -87,6 +87,7 @@ public class LocalMediaFolder implements Parcelable {
         return 0;
     }
 
+    /** writeTo parcel->是序列化写入文件，序列化存储较为复杂，可以用系统插件代替-> plugin ->parcel</> */
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.name);
@@ -101,6 +102,7 @@ public class LocalMediaFolder implements Parcelable {
     public LocalMediaFolder() {
     }
 
+    /**读每个文件，序列化实现每个文件的读写过程！*/
     protected LocalMediaFolder(Parcel in) {
         this.name = in.readString();
         this.path = in.readString();

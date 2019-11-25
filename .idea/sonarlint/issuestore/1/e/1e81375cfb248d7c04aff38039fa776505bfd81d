@@ -1,0 +1,23 @@
+
+:squid:S1659/"#Declare "tv_ok" on a separate line.(àç¤
+ksquid:S001163"SRename this field "ll_check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³“Îñ
+Lsquid:S1066×"/Merge this if statement with the enclosing one.(ÃÛè¯ûÿÿÿÿ
+psquid:S001161"SRename this field "id_ll_ok" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÁÖ¹ûÿÿÿÿ
+`squid:S3358j"DExtract this nested ternary operation into an independent statement.(ÿÚ ëúÿÿÿÿ
+rsquid:S14507"VRemove the "adapter" field and declare it as a local variable in the relevant methods.(áİÕıÿÿÿÿÿ
+Gsquid:S1066“"/Merge this if statement with the enclosing one.(Éø²Ú
+[squid:HiddenFieldCheck§"9Rename "index" which hides the field declared at line 58.(£¡
+vsquid:S1450."`Remove the "picture_left_back" field and declare it as a local variable in the relevant methods.(»‹Ä
+ssquid:S00116."\Rename this field "picture_left_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‹Ä
+nsquid:S00117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÖÿûÿÿÿÿÿ
+Dsquid:S1604I"(Make this anonymous inner class a lambda(÷»ÉŸıÿÿÿÿ
+ksquid:S00116/"SRename this field "tv_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àç¤
+hsquid:S00116/"PRename this field "tv_ok" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àç¤
+=squid:S1659/"&Declare "tv_title" on a separate line.(àç¤
+Osquid:S2387<"8"mHandler" is the name of a field in "FragmentActivity".(€£öò
+Dsquid:S1125m"(Remove the literal "true" boolean value.(üÕş úÿÿÿÿ
+gsquid:S1301E"KReplace this "switch" statement by "if" statements to increase readability.(õËãàøÿÿÿÿ
+msquid:S00116/"URename this field "tv_img_num" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àç¤
+hsquid:S1301»"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ
+Tsquid:S2589×"7Remove this expression which always evaluates to "true"(ÃÛè¯ûÿÿÿÿ
+nsquid:S14503"WRemove the "ll_check" field and declare it as a local variable in the relevant methods.(³“Îñ

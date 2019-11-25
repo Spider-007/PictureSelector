@@ -104,7 +104,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         case 1:
                             // 预览图片 可自定长按保存路径
                             //PictureSelector.create(MainActivity.this).themeStyle(themeId).externalPicturePreview(position, "/custom_file", selectList);
-                            PictureSelector.create(MainActivity.this).themeStyle(themeId).openExternalPreview(position, selectList);
+                            PictureSelector.create(MainActivity.this)
+                                    /**外部预览设置样式*/
+                                    .themeStyle(themeId)
+                                    /**提供外部预览方法*/
+                                    .openExternalPreview(position, selectList);
                             break;
                         case 2:
                             // 预览视频

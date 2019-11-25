@@ -154,6 +154,7 @@ public class PicturePreviewActivity extends PictureBaseActivity implements
                         VoiceUtils.playVoice(mContext, config.openClickSound);
                         // 如果是单选，则清空已选中的并刷新列表(作单一选择)
                         if (config.selectionMode == PictureConfig.SINGLE) {
+                            /**单选图片*/
                             singleRadioMediaImage();
                         }
                         selectImages.add(image);
@@ -165,6 +166,7 @@ public class PicturePreviewActivity extends PictureBaseActivity implements
                         for (LocalMedia media : selectImages) {
                             if (media.getPath().equals(image.getPath())) {
                                 selectImages.remove(media);
+                                /**更新选择顺序*/
                                 subSelectPosition();
                                 notifyCheckChanged(media);
                                 break;
@@ -396,7 +398,7 @@ public class PicturePreviewActivity extends PictureBaseActivity implements
             // 如果设置了图片最小选择数量，则判断是否满足条件
             int size = selectImages.size();
             LocalMedia image = selectImages.size() > 0 ? selectImages.get(0) : null;
-            String pictureType = image != null ? image.getPictureType() : "";
+            String pictureType = image != null ? image.getPictureType() : ""; //获取系统图片类型
             if (config.minSelectNum > 0) {
                 if (size < config.minSelectNum && config.selectionMode == PictureConfig.MULTIPLE) {
                     boolean eqImg = pictureType.startsWith(PictureConfig.IMAGE);

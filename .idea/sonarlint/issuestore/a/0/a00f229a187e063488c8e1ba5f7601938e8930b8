@@ -1,0 +1,23 @@
+
+hsquid:S1301‡"KReplace this "switch" statement by "if" statements to increase readability.(ıŞ³‹ùÿÿÿÿ
+nsquid:S2095î"QUse try-with-resources or close this "BufferedInputStream" in a "finally" clause.(¾öÀ˜ıÿÿÿÿ
+osquid:S2095ï"RUse try-with-resources or close this "BufferedOutputStream" in a "finally" clause.(¤Ï¨ˆşÿÿÿÿ
+fsquid:S00101Ñ"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(—Úû
+Esquid:S1604Û"(Make this anonymous inner class a lambda(õ•Áúÿÿÿÿ
+Bsquid:S5411÷"*Use the primitive boolean expression here.(Ë¿à
+osquid:S00117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ØÄ„ùÿÿÿÿ
+jsquid:S00117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùŠË­
+osquid:S00117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç”¾ñıÿÿÿÿ
+jsquid:S00117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼À€Å
+@squid:S1148Æ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148Ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+tsquid:S1450B"XRemove the "left_back" field and declare it as a local variable in the relevant methods.(½¤øõüÿÿÿÿ
+rsquid:S1450H"VRemove the "adapter" field and declare it as a local variable in the relevant methods.(áİÕıÿÿÿÿÿ
+qsquid:S00116B"TRename this field "left_back" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¤øõüÿÿÿÿ
+ksquid:S00116C"SRename this field "tv_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†¾·
+vsquid:S00116G"YRename this field "directory_path" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İíÓ‡øÿÿÿÿ
+]squid:CallToDeprecatedMethodÉ"4Remove this use of "SimpleTarget"; it is deprecated.(Ğ‚´º
+dsquid:HiddenFieldCheck©"<Rename "tv_title" which hides the field declared at line 67.(ç”¾ñıÿÿÿÿ
+Bsquid:S1481ô"*Remove this unused "speed" local variable.(Ÿà¶Š
+Fsquid:S3398¢".Move this method into "SimpleFragmentAdapter".(ûíœ¡

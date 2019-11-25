@@ -571,8 +571,20 @@ public class PictureFileUtils {
      * @param mContext
      */
     public static void deleteCacheDirFile(Context mContext) {
+        /**返回文件系统上应用程序特定的缓存目径*/
         File cutDir = mContext.getCacheDir();
+        /**创建压缩->返回特定的缓存路径，对图片进行压缩*/
         File compressDir = new File(mContext.getCacheDir() + "/picture_cache");
+        /**Returns the absolute path to the application specific cache directory on the filesystem.
+         * These files will be ones that get deleted first when the device runs low on storage.
+         * There is no guarantee when these files will be deleted.
+         Note: you should not rely on the system deleting these files for you; you should always have a reasonable maximum, such as 1 MB,
+         for the amount of space you consume with cache files, and prune those files when exceeding that space.
+         The returned path may change over time if the calling app is moved to an adopted storage device, so only relative paths should be persisted.
+         Apps require no extra permissions to read or write to the returned path, since this path lives in their private storage.
+         Returns
+         File
+         The path of the directory holding application cache files.*/
         File lubanDir = new File(mContext.getCacheDir() + "/luban_disk_cache");
         if (cutDir != null) {
             File[] files = cutDir.listFiles();

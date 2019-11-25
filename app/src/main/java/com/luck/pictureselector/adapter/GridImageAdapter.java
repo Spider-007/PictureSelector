@@ -190,6 +190,7 @@ public class GridImageAdapter extends
                         .apply(options)
                         .into(viewHolder.mImg);
             }
+            
             //itemView 的点击事件
             if (mItemClickListener != null) {
                 viewHolder.itemView.setOnClickListener(new View.OnClickListener() {

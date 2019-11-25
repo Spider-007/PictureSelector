@@ -1,0 +1,22 @@
+
+Fsquid:S1066"/Merge this if statement with the enclosing one.(­ş¼%
+Zsquid:S2583ò"CChange this condition so that it does not always evaluate to "true"(Ø“Ç
+jsquid:S00117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½§ÊÅ
+osquid:S00117Ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ©Öûşÿÿÿÿ
+Csquid:S1659>",Declare "overrideHeight" on a separate line.(ãÜ±ğ
+jsquid:S1450G"SRemove the "isGo" field and declare it as a local variable in the relevant methods.(‰¥ÌÂ
+vsquid:S00116<"YRename this field "is_checked_num" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ©Ñøÿÿÿÿ
+osquid:ModifiersOrderCheck1"EReorder the modifiers to comply with the Java Language Specification.(Ÿ•©–ûÿÿÿÿ
+usquid:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÌîÆ‰üÿÿÿÿ
+psquid:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(’¬Ÿ¤
+ssquid:S00116ş"ZRename this field "tv_title_camera" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÁ¿ÿ
+>squid:S1659"&Declare "tv_isGif" on a separate line.(á ¡‹
+Csquid:S1659"+Declare "tv_long_chart" on a separate line.(á ¡‹
+/squid:S2176‹"Rename this class.(Â×Öúÿÿÿÿ
+ssquid:S00116Œ"URename this field "iv_picture" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¦Ãúùÿÿÿÿ
+osquid:S00116"VRename this field "tv_duration" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á ¡‹
+lsquid:S00116"SRename this field "tv_isGif" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á ¡‹
+qsquid:S00116"XRename this field "tv_long_chart" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á ¡‹
+qsquid:S00116"SRename this field "ll_check" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª²ÌÓıÿÿÿÿ
+[squid:S3358ò"DExtract this nested ternary operation into an independent statement.(Ø“Ç
+[squid:S3358ò"DExtract this nested ternary operation into an independent statement.(Ø“Ç

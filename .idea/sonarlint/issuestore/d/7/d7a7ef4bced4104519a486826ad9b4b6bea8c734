@@ -1,0 +1,11 @@
+
+osquid:S00117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”¢•Äüÿÿÿÿ
+jsquid:S00117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©®èÉ
+osquid:S00117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ÀĞşÿÿÿÿ
+bsquid:S3358»"DExtract this nested ternary operation into an independent statement.(üŒ…K8®®Ÿ—é-
+ssquid:S00100Å"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯×Å¿ÿÿÿÿÿ8®®Ÿ—é-
+Gsquid:S1148š"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8®®Ÿ—é-
+nsquid:S00117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”Å¥—úÿÿÿÿ
+Ysquid:S3457î"AFormat specifiers should be used instead of string concatenation.(Ä˜±İ
+u
+squid:S135Õ"YReduce the total number of break and continue statements in this loop to use at most one.(ü§è½ùÿÿÿÿ

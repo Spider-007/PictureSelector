@@ -504,4 +504,10 @@ PictureSelector.create(MainActivity.this).externalPictureVideo(video_path);
 ![image](https://github.com/LuckSiege/PictureSelector/blob/master/image/9.jpg)
 ![image](https://github.com/LuckSiege/PictureSelector/blob/master/image/10.jpg)
 
+***Q U E S T I O N***
+Session 'app': Changes were not applied. No running app process found. Run app
+
+Session 'MXClient': Installation did not succeed. The application could not be installed: INSTALL_FAILED_DUPLICATE_PERMISSION Retry
+is null -> 
+
 

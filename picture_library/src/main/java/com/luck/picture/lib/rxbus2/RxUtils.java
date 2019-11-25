@@ -99,6 +99,11 @@ public class RxUtils {
         io(0, task);
     }
 
+
+    /**
+     * @params delayMilliseconds
+     * @paremas task 任务，传入任意类型的集合
+     * */
     public static <T> void io(long delayMilliseconds, final RxUtils.RxSimpleTask task) {
 
         Observable observable = Observable.create((e) -> {

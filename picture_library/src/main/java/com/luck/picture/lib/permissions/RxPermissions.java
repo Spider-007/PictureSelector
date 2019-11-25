@@ -34,6 +34,7 @@ public class RxPermissions {
         mRxPermissionsFragment = getRxPermissionsFragment(activity);
     }
 
+    /**得到权限*/
     private RxPermissionsFragment getRxPermissionsFragment(Activity activity) {
         RxPermissionsFragment rxPermissionsFragment = null;
         try {

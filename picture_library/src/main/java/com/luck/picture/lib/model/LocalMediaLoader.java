@@ -33,37 +33,65 @@ import java.util.Locale;
  */
 
 public class LocalMediaLoader {
+    /**
+     * 类型
+     */
     private int type;
+    /**
+     * 获取外部查询-->得到上下文内容提供器
+     * 组合：媒体商店 + 所需文件夹 + 文件 ("external")//外部
+     */
     private static final Uri QUERY_URI = MediaStore.Files.getContentUri("external");
+    /**
+     * 行的唯一id，得到行的desc-> 进行排序
+     * 对id 进行排序， desc 指定排序方式
+     */
     private static final String ORDER_BY = MediaStore.Files.FileColumns._ID + " DESC";
+    /**
+     * 没有gif
+     * 拼接的字符串格式 "!='image/gif'" 代表无 gif
+     */
     private static final String NOT_GIF = "!='image/gif'";
     /**
      * 过滤掉小于500毫秒的录音
+     * 打开音频可以对音频进行控制
      */
     private static final int AUDIO_DURATION = 500;
     private Context mContext;
     private boolean isGif;
+    /**
+     * 最大录像值
+     */
     private long videoMaxS;
+    /**
+     * 最小录像值
+     */
     private long videoMinS;
+    /**
+     * 是否android10
+     * */
     private boolean isAndroidQ;
 
     /**
      * 媒体文件数据库字段
      */
     private static final String[] PROJECTION = {
-            MediaStore.Files.FileColumns._ID,
-            MediaStore.MediaColumns.DATA,
-            MediaStore.MediaColumns.MIME_TYPE,
+            MediaStore.Files.FileColumns._ID, //图片 _id
+            MediaStore.MediaColumns.DATA, //获取媒体商店 媒体元数据列 的data
+            MediaStore.MediaColumns.MIME_TYPE,//获取原始数据的列的mime,是只读的
             MediaStore.MediaColumns.WIDTH,
             MediaStore.MediaColumns.HEIGHT,
             MediaStore.MediaColumns.DURATION};
 
     /**
+     * {
      * 图片
      */
     private static final String SELECTION = MediaStore.Files.FileColumns.MEDIA_TYPE + "=?"
             + " AND " + MediaStore.MediaColumns.SIZE + ">0";
-
+    /**
+     * 设置是否支持gif}
+     */
     private static final String SELECTION_NOT_GIF = MediaStore.Files.FileColumns.MEDIA_TYPE + "=?"
             + " AND " + MediaStore.MediaColumns.SIZE + ">0"
             + " AND " + MediaStore.MediaColumns.MIME_TYPE + NOT_GIF;
@@ -134,6 +162,7 @@ public class LocalMediaLoader {
     }
 
     public void loadAllMedia(final LocalMediaLoadListener imageLoadListener) {
+        //抽象类方法回调
         RxUtils.io(new RxUtils.RxSimpleTask<List<LocalMediaFolder>>() {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @NonNull
@@ -149,7 +178,9 @@ public class LocalMediaLoader {
                     case PictureConfig.TYPE_IMAGE:
                         // 只获取图片
                         selection = isGif ? SELECTION : SELECTION_NOT_GIF;
-                        String[] MEDIA_TYPE_IMAGE = getSelectionArgsForSingleMediaType(MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE);
+                        /**得到指定系统图库里面的图片 */
+                        String[] MEDIA_TYPE_IMAGE = getSelectionArgsForSingleMediaType
+                                (MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE); //得到pic 类型的数据
                         selectionArgs = MEDIA_TYPE_IMAGE;
                         break;
                     case PictureConfig.TYPE_VIDEO:
@@ -168,13 +199,19 @@ public class LocalMediaLoader {
                 Cursor data = mContext.getContentResolver().query(QUERY_URI, PROJECTION, selection, selectionArgs, ORDER_BY);
                 try {
                     List<LocalMediaFolder> imageFolders = new ArrayList<>();
+                    /**本地文件加载器*/
                     LocalMediaFolder allImageFolder = new LocalMediaFolder();
+                    /**添加图片到系统目录*/
                     List<LocalMedia> latelyImages = new ArrayList<>();
+                    /**当查询到的游标未关闭*/
                     if (data != null) {
                         int count = data.getCount();
                         if (count > 0) {
+                            /**移动到 头一行*/
                             data.moveToFirst();
+                            /**此处do while() 相等于 while(custor.moveTonext())*/
                             do {
+                                /**返回给定列名从零开始的索引*/
                                 long id = data.getLong
                                         (data.getColumnIndexOrThrow(PROJECTION[0]));
 
@@ -210,13 +247,19 @@ public class LocalMediaLoader {
                                         continue;
                                     }
                                 }
+                                /**拿到系统相册数据放到集合*/
                                 LocalMedia image = new LocalMedia
                                         (path, duration, type, pictureType, w, h);
+                                /**创建文件夹，不让系统相册一张一张的显示*/
                                 LocalMediaFolder folder = getImageFolder(path, imageFolders);
+                                /**得到文件夹，存放集合数据*/
                                 List<LocalMedia> images = folder.getImages();
                                 images.add(image);
+                                /**设置显示的图片的数量*/
                                 folder.setImageNum(folder.getImageNum() + 1);
+                                /**加入相册，数据使用 arrayList 是基于数组，优点查询快，增删快，更改慢；链表则是更改快，查询慢!*/
                                 latelyImages.add(image);
+                                /**得到图片num,*/
                                 int imageNum = allImageFolder.getImageNum();
                                 allImageFolder.setImageNum(imageNum + 1);
                             } while (data.moveToNext());
@@ -291,18 +334,18 @@ public class LocalMediaLoader {
      * @return
      */
     private LocalMediaFolder getImageFolder(String path, List<LocalMediaFolder> imageFolders) {
-        File imageFile = new File(path);
-        File folderFile = imageFile.getParentFile();
-        for (LocalMediaFolder folder : imageFolders) {
+        File imageFile = new File(path); //创建单个 pasth 图片
+        File folderFile = imageFile.getParentFile();//得到每个图片的父级文件，创建文件夹文件
+        for (LocalMediaFolder folder : imageFolders) { //遍历获取每个 folder
             // 同一个文件夹下，返回自己，否则创建新文件夹
-            if (folder.getName().equals(folderFile.getName())) {
+            if (folder.getName().equals(folderFile.getName())) {//判断文件名称是否相同
                 return folder;
             }
         }
-        LocalMediaFolder newFolder = new LocalMediaFolder();
-        newFolder.setName(folderFile.getName());
-        newFolder.setPath(folderFile.getAbsolutePath());
-        newFolder.setFirstImagePath(path);
+        LocalMediaFolder newFolder = new LocalMediaFolder();//创建每一个显示 的本地文件夹存醋图片
+        newFolder.setName(folderFile.getName());//获取文件夹名称赋初始值
+        newFolder.setPath(folderFile.getAbsolutePath());//获取绝对路径 data/data/包名
+        newFolder.setFirstImagePath(path); //获取第一张图片路径
         imageFolders.add(newFolder);
         return newFolder;
     }

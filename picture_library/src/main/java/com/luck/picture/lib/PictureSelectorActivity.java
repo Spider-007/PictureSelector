@@ -385,6 +385,7 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
                         type,
                         outputCameraPath, config.suffixType);
                 cameraPath = cameraFile.getAbsolutePath();
+                /**拍过的照片生成uri*/
                 imageUri = parUri(cameraFile);
             }
             cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
@@ -457,7 +458,20 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
         Uri imageUri;
         String authority = getPackageName() + ".provider";
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
-            //通过FileProvider创建一个content类型的Uri
+            /**Return a content URI for a given File. Specific temporary permissions for the content URI can be set
+             *  with Context.grantUriPermission(String, Uri, int), or added to an Intent by calling setData() and
+             *  then setFlags(); in both cases, the applicable flags are Intent.FLAG_GRANT_READ_URI_PERMISSION
+             *  and Intent.FLAG_GRANT_WRITE_URI_PERMISSION. A FileProvider can only return a content Uri for file
+             *  paths defined in their <paths> meta-data element. See the Class Overview for more information.
+             通过FileProvider创建一个content类型的Ur
+             Params:
+             context – A Context for the current component.
+             authority – The authority of a FileProvider defined in a <provider> element in your app's manifest.
+             file – A File pointing to the filename for which you want a content Uri.
+             Returns:
+             A content URI for the file.
+             Throws:
+             IllegalArgumentException – When the given File is outside the paths supported by the provider.*/
             imageUri = FileProvider.getUriForFile(mContext, authority, cameraFile);
         } else {
             imageUri = Uri.fromFile(cameraFile);

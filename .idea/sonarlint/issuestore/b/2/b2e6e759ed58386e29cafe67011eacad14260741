@@ -1,0 +1,12 @@
+
+@squid:S1148¾"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+ksquid:ModifiersOrderCheck£"EReorder the modifiers to comply with the Java Language Specification.(‡ýäÀ
+bsquid:S3027Ñ"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(í¾Ùñ
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(«ãßá
+asquid:S3027^"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(¤½Óö
+bsquid:S3027¹"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(í¾Ùñ
+gsquid:S3027õ"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(ú–Ùúúÿÿÿÿ
+psquid:ModifiersOrderCheck¥"EReorder the modifiers to comply with the Java Language Specification.(Ò÷í°ýÿÿÿÿ
+@squid:S1148Ö"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Gsquid:S1066‡"/Merge this if statement with the enclosing one.(†Ë“Ñ
+@squid:S1148Š"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
