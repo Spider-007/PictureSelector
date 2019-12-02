@@ -21,6 +21,7 @@ public class MediaUtils {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public static long extractVideoDuration(Context context, boolean isAndroidQ, String path) {
+        /**三目混合使用 ——> ?a ?b :b1 : a1*/
         return !TextUtils.isEmpty(path) ? isAndroidQ ? getLocalVideoDurationToAndroidQ(context, path)
                 : getLocalVideoDuration(path) : 0;
     }
@@ -56,7 +57,9 @@ public class MediaUtils {
             Cursor query = context.getApplicationContext().getContentResolver().query(Uri.parse(videoPath),
                     null, null, null);
             if (query != null) {
+                /**把光标移到第一行*/
                 query.moveToFirst();
+                /**如果获取到的列名为空，就抛出illegalArgumentException,赋值获取媒体project 运行时间*/
                 duration = query.getInt(query.getColumnIndexOrThrow(MediaStore.Video
                         .Media.DURATION));
                 return duration;

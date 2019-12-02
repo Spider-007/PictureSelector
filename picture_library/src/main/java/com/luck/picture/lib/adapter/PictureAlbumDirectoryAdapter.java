@@ -32,6 +32,7 @@ import java.util.List;
  */
 public class PictureAlbumDirectoryAdapter extends RecyclerView.Adapter<PictureAlbumDirectoryAdapter.ViewHolder> {
     private Context mContext;
+    /**得到的是所有文件的视频播放的路径*/
     private List<LocalMediaFolder> folders = new ArrayList<>();
     private int mimeType;
 
@@ -49,6 +50,7 @@ public class PictureAlbumDirectoryAdapter extends RecyclerView.Adapter<PictureAl
         this.mimeType = mimeType;
     }
 
+    /**得到文件夹里面的数据*/
     public List<LocalMediaFolder> getFolderData() {
         if (folders == null) {
             folders = new ArrayList<>();
@@ -80,6 +82,7 @@ public class PictureAlbumDirectoryAdapter extends RecyclerView.Adapter<PictureAl
         holder.tv_sign.setVisibility(checkedNum > 0 ? View.VISIBLE : View.INVISIBLE);
         /**设置itemView都为选中状态*/
         holder.itemView.setSelected(isChecked);
+        /**设置MIME类型是否是音频功能*/
         if (mimeType == PictureMimeType.ofAudio()) {
             holder.first_image.setImageResource(R.drawable.audio_placeholder);
         } else {

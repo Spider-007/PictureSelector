@@ -2,7 +2,6 @@ package com.luck.picture.lib;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -215,6 +214,7 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
         picture_id_preview.setOnClickListener(this);
         if (config.mimeType == PictureMimeType.ofAudio()) {
             picture_id_preview.setVisibility(View.GONE);
+            /**得到屏幕高度，和状态栏高度*/
             audioH = ScreenUtils.getScreenHeight(mContext)
                     + ScreenUtils.getStatusBarHeight(mContext);
         } else {
@@ -239,7 +239,8 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
         // 解决调用 notifyItemChanged 闪烁问题,取消默认动画
         ((SimpleItemAnimator) picture_recycler.getItemAnimator())
                 .setSupportsChangeAnimations(false);
-        mediaLoader = new LocalMediaLoader(this, config.mimeType, config.isGif, config.videoMaxSecond, config.videoMinSecond);
+        mediaLoader = new LocalMediaLoader(this,
+                config.mimeType, config.isGif, config.videoMaxSecond, config.videoMinSecond);
         rxPermissions.request(Manifest.permission.READ_EXTERNAL_STORAGE)
                 .subscribe(new Observer<Boolean>() {
                     @Override
@@ -308,8 +309,11 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
      * get LocalMedia s
      */
     protected void readLocalMedia() {
+        /**java 1.8 Lamed -> 表达式语法 */
         mediaLoader.loadAllMedia(folders -> {
+            /**文件夹不是空*/
             if (folders.size() > 0) {
+
                 foldersList = folders;
                 LocalMediaFolder folder = folders.get(0);
                 folder.setChecked(true);

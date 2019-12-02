@@ -1,16 +1,16 @@
 
-@squid:S1148ì"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148É"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-jsquid:S00117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È‡—
-@squid:S1148œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148²"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-esquid:UselessImportCheck-"<Remove this unused import 'io.reactivex.functions.Function'.(Ş•Å¸ùÿÿÿÿ
-@squid:S1148Ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Esquid:S1659:".Declare "outputCameraPath" on a separate line.(¥ö´™
-Asquid:S1125Œ")Remove the literal "false" boolean value.(»ĞÒË
-jsquid:S00117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œşñ˜
-@squid:S1148®"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-?squid:S16598")Declare "numComplete" on a separate line.(´©ÆF
-Jsquid:S16599".Declare "colorPrimaryDark" on a separate line.(„¡Ü­úÿÿÿÿ
-esquid:UselessImportCheck,"<Remove this unused import 'io.reactivex.functions.Consumer'.(áè—Õüÿÿÿÿ
-@squid:S1148É"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Jsquid:S1659:".Declare "colorPrimaryDark" on a separate line.(„¡Ü­úÿÿÿÿ
+@squid:S1148î"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Asquid:S1125")Remove the literal "false" boolean value.(»ĞÒË
+@squid:S1148¯"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Esquid:S1659;".Declare "outputCameraPath" on a separate line.(¥ö´™
+@squid:S1148´"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148à"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S16599")Declare "numComplete" on a separate line.(´©ÆF
+esquid:UselessImportCheck."<Remove this unused import 'io.reactivex.functions.Function'.(Ş•Å¸ùÿÿÿÿ
+@squid:S1148Ê"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148Ë"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+jsquid:S00117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œşñ˜
+esquid:UselessImportCheck-"<Remove this unused import 'io.reactivex.functions.Consumer'.(áè—Õüÿÿÿÿ
+jsquid:S00117¾"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È‡—
+@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

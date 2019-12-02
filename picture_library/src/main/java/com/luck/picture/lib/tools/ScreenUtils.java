@@ -28,15 +28,20 @@ public class ScreenUtils {
         return localDisplayMetrics.heightPixels - getStatusBarHeight(context);
     }
     public static int getStatusBarHeight(Context context){
+        /**初始化类对象*/
         Class<?> c = null;
         Object obj = null;
         Field field = null;
         int x = 0, statusBarHeight = 0;
         try {
+            /**user 反射获取 internale 接口下的类*/
             c = Class.forName("com.android.internal.R$dimen");
+            /**得到实例对象*/
             obj = c.newInstance();
+            /**获取系统属性的状态栏高度*/
             field = c.getField("status_bar_height");
             x = Integer.parseInt(field.get(obj).toString());
+            /**检索资源id 获取特定像素的尺寸id*/
             statusBarHeight = context.getResources().getDimensionPixelSize(x);
         } catch (Exception e1) {
             e1.printStackTrace();

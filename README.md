@@ -510,4 +510,3 @@ Session 'app': Changes were not applied. No running app process found. Run app
 Session 'MXClient': Installation did not succeed. The application could not be installed: INSTALL_FAILED_DUPLICATE_PERMISSION Retry
 is null -> 
 
-

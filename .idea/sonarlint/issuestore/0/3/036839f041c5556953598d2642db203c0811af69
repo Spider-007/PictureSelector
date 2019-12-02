@@ -1,0 +1,13 @@
+
+Ksquid:S1066{"/Merge this if statement with the enclosing one.(Š¯ø‚üÿÿÿÿ
+Lsquid:S1066"/Merge this if statement with the enclosing one.(Š¯ø‚üÿÿÿÿ
+Dsquid:S1604o"(Make this anonymous inner class a lambda(‚úã™ÿÿÿÿÿ
+?squid:S1148J"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Esquid:S1659".Declare "picture_tv_video" on a separate line.(çŠ Ç
+Fsquid:S1659"/Declare "picture_tv_cancel" on a separate line.(çŠ Ç
+Fsquid:S1659"*Declare "animationOut" on a separate line.(çÔ—«ùÿÿÿÿ
+ssquid:S00116"[Rename this field "picture_tv_photo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çŠ Ç
+ssquid:S00116"[Rename this field "picture_tv_video" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çŠ Ç
+tsquid:S00116"\Rename this field "picture_tv_cancel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çŠ Ç
+osquid:S00116"RRename this field "ll_root" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÖÄ‰şÿÿÿÿ
+rsquid:S00116"URename this field "fl_content" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û‹À±üÿÿÿÿ

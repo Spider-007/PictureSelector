@@ -42,6 +42,10 @@ public class LocalMedia implements Parcelable {
         this.pictureType = pictureType;
     }
 
+    /**
+     * @param path 文件路径
+     * @param duration 耗时时间
+     * */
     public LocalMedia(String path, long duration, int mimeType, String pictureType, int width, int height) {
         this.path = path;
         this.duration = duration;

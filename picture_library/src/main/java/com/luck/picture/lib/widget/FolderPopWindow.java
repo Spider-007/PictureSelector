@@ -52,6 +52,7 @@ public class FolderPopWindow extends PopupWindow implements View.OnClickListener
     public FolderPopWindow(Context context, int mimeType) {
         this.context = context;
         this.mimeType = mimeType;
+        /**关联布局适配显示*/
         window = LayoutInflater.from(context).inflate(R.layout.picture_window_folder, null);
         /**加载布局*/
         this.setContentView(window);
@@ -81,10 +82,15 @@ public class FolderPopWindow extends PopupWindow implements View.OnClickListener
     }
 
     public void initView() {
+        /**加载布局显示*/
         id_ll_root = (LinearLayout) window.findViewById(R.id.id_ll_root);
+        /**适配器关联上下文*/
         adapter = new PictureAlbumDirectoryAdapter(context);
+        /**绑定rv显示*/
         recyclerView = (RecyclerView) window.findViewById(R.id.folder_list);
+        /**获取屏幕高度*/
         recyclerView.getLayoutParams().height = (int) (ScreenUtils.getScreenHeight(context) * 0.6);
+        /**分割线显示*/
         recyclerView.addItemDecoration(new RecycleViewDivider(
                 context, LinearLayoutManager.HORIZONTAL, ScreenUtils.dip2px(context, 0),
                 ContextCompat.getColor(context, R.color.transparent)));

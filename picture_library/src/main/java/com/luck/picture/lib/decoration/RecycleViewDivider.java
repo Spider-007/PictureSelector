@@ -116,6 +116,7 @@ public class RecycleViewDivider extends RecyclerView.ItemDecoration {
     private void drawVertical(Canvas canvas, RecyclerView parent) {
         final int top = parent.getPaddingTop();
         final int bottom = parent.getMeasuredHeight() - parent.getPaddingBottom();
+        /**得到只视图数量*/
         final int childSize = parent.getChildCount();
         for (int i = 0; i < childSize; i++) {
             final View child = parent.getChildAt(i);
@@ -123,10 +124,12 @@ public class RecycleViewDivider extends RecyclerView.ItemDecoration {
             final int left = child.getRight() + layoutParams.rightMargin;
             final int right = left + mDividerHeight;
             if (mDivider != null) {
+                /**设置边框*/
                 mDivider.setBounds(left, top, right, bottom);
                 mDivider.draw(canvas);
             }
             if (mPaint != null) {
+                /**设置矩阵*/
                 canvas.drawRect(left, top, right, bottom, mPaint);
             }
         }

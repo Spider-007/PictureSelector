@@ -394,16 +394,20 @@ public class PictureImageGridAdapter extends RecyclerView.Adapter<RecyclerView.V
      * @param isAnim
      */
     public void selectImage(ViewHolder holder, boolean isChecked, boolean isAnim) {
+        /**根据选择状态设置选中*/
         holder.check.setSelected(isChecked);
         if (isChecked) {
             if (isAnim) {
+                /**动画不是空的话*/
                 if (animation != null) {
+                    /**开启动画*/
                     holder.check.startAnimation(animation);
                 }
             }
             holder.iv_picture.setColorFilter(ContextCompat.getColor
                     (context, R.color.image_overlay_true), PorterDuff.Mode.SRC_ATOP);
         } else {
+            /**项目->裁剪库?*/
             holder.iv_picture.setColorFilter(ContextCompat.getColor
                     (context, R.color.image_overlay_false), PorterDuff.Mode.SRC_ATOP);
         }

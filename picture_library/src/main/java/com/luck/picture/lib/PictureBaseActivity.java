@@ -1,5 +1,6 @@
 package com.luck.picture.lib;
 
+import android.annotation.SuppressLint;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -206,6 +207,7 @@ public class PictureBaseActivity extends FragmentActivity {
     /**
      * compressImage
      */
+    @SuppressLint("CheckResult")
     protected void compressImage(final List<LocalMedia> result) {
         showCompressDialog();
         if (config.synOrAsy) {

@@ -1,0 +1,6 @@
+
+?squid:S1148Z"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(Á¿ùÆ
+[squid:S3358"DExtract this nested ternary operation into an independent statement.(²ÐÆ×
+`squid:UselessImportCheck"<Remove this unused import 'android.content.ContentResolver'.(½Àô“
+?squid:S1148E"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
